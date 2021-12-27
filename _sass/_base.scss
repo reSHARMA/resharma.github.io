@@ -5,16 +5,20 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  font-size: .5%;
 }
 
 body {
   margin: 0;
+  margin-left: 15%;
   padding: 0;
   padding-bottom: 9em;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
-
+  font-size: 1.3em;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #404040;
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
@@ -25,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 350;
 }
 
 h1 {
@@ -109,7 +113,7 @@ blockquote {
   }
 }
 
-/* links */
+/* links 
 
 a {
   &:focus {
@@ -121,6 +125,8 @@ a {
     outline: 0;
   }
 }
+
+*/
 
 /* code */
 
@@ -139,11 +145,11 @@ figcaption > code,
 td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: $type-size-6;
+  // font-size: $type-size-6;
   background: $code-background-color;
-  border: 1px solid $lighter-gray;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  //  border: 1px solid $lighter-gray;
+  // border-radius: $border-radius;
+  // box-shadow: $box-shadow;
 
   &:before, &:after {
     letter-spacing: -0.2em;
